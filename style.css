@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f7fc;
+  color: #333;
+}
+
+.skills-section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skills-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.skills-section .intro {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Technical Skills */
+.skills-container {
+  margin-bottom: 40px;
+}
+
+.skills-container h2 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill p {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.progress {
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  text-align: right;
+  padding-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Soft Skills */
+.soft-skills h2 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.soft-skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.soft-skill {
+  background: #e9f5ff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #0077b6;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.soft-skill:hover {
+  transform: translateY(-5px);
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact & Resume</title>
+  <link rel="stylesheet" href="contactt.css" />
+</head>
+<body>
+  <section class="contact-section">
+    <header class="top">
+      <div>
+        <h1>Contact Me</h1>
+        <p class="intro">Have a question or want to collaborate? Reach out — or download my resume below.</p>
+      </div>
+
+      <!-- Resume download -->
+      <div class="resume-area">
+        <!-- Put your resume file as "resume.pdf" in the same folder -->
+        <a class="btn-download" href="resume.pdf.pdf" download="RamJi_Resume.pdf" title="Download Resume">⬇️ Download Resume</a>
+      </div>
+    </header>
+
+    <main class="main-grid">
+      <!-- Contact Form -->
+      <form class="contact-form" onsubmit="alert('Form submission will be handled by your backend — this is a placeholder.'); return false;">
+        <div class="form-row">
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Your Email</label>
+          <input id="email" name="email" type="email" placeholder="yourmail@mail.com" required />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-send">Send Message</button>
+        </div>
+      </form>
+
+      <!-- Right column: Contact info, highlights, testimonials -->
+      <aside class="side">
+        <div class="contact-info card">
+          <h2>Get in Touch</h2>
+          <p>📧 Email: <a href="mailto:yourmail@example.com">ramjithirumalai@example.com</a></p>
+          <p>📱 Phone: +91 6382677448</p>
+          <p>📍 Location: Bangalore, India</p>
+        </div>
+
+        <div class="highlights card">
+          <h2>Professional Highlights</h2>
+          <ul>
+            <li><strong>2+ years</strong> building responsive web apps (HTML, CSS, JS)</li>
+            <li><strong>Worked on</strong> 5+ client projects — e-commerce & dashboards</li>
+            <li><strong>Technologies:</strong> React, Node.js, Python, REST APIs</li>
+            <li><strong>Open-source:</strong> 10 contributions and small utility packages</li>
+          </ul>
+        </div>
+
+        <div class="testimonials card">
+          <h2>Testimonials</h2>
+
+          <!-- Testimonial item -->
+          <blockquote class="testimonial">
+            <p>“Ram delivered the project ahead of schedule — excellent communication and clean code.”</p>
+            — Priya Sharma, Product Manager
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p>“Great problem solver and always willing to go the extra mile.”</p>
+            — Ajay Kumar, Client 
+          </blockquote>
+ 
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Ramji — <small>Available for freelance & full-time roles</small></p>
+    </footer>
+  </section>
+
+  <script>
+    // small nicety: set year for footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
